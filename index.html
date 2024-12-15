@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Transport Planner</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sustainability Transport Planner</h1>
+    <div id="map"></div>
+    <div id="controls">
+        <label for="start">Start Location:</label>
+        <input type="text" id="start" placeholder="Enter start location">
+        <label for="end">End Location:</label>
+        <input type="text" id="end" placeholder="Enter end location">
+        <button id="set-locations">Set Locations</button>
+        <label for="transport">Transport Method:</label>
+        <select id="transport">
+            <option value="walking">Walking</option>
+            <option value="biking">Biking</option>
+            <option value="driving-car">Driving</option>
+        </select>
+        <button id="calculate">Calculate Route</button>
+    </div>
+    <div id="results"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
